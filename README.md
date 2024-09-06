@@ -14,7 +14,9 @@ The application supports JWT-based authentication and provides endpoints for add
   - [Contacts Management](#contacts-management)
 - [ContactDocument](#contactdocument)
 - [UserDocument](#userdocument)
+- [Performance](#performance)
 - [Logging](#logging)
+- [Tests](#tests)
 
 ## Project Structure
 
@@ -33,7 +35,8 @@ The application supports JWT-based authentication and provides endpoints for add
 
 1. Clone the repository.
 2. docker-compose up -d.
-3. Run the application using your preferred IDE or through the command line:
+3. Or:
+   Run the application using your preferred IDE or through the command line:
 
    mvn spring-boot:run
 
@@ -211,11 +214,26 @@ The `UserDocument` represents a user entity that stores the following fields:
 - `userName` (String): The username of the user.
 - `password` (String): The password of the user.
 
+## Performance
+
+- I made the app in a way that it can be instantiated multiple times on demand for scaling.
+- I used mongodb because it can be expanded later both vertically and horizontally scaled, using several nodes with the shard feature on the userName key.
+- I indexed the relevant DB keys in order to improve queries rate.
+- I used JWT for authentication, in order to remain stateless but still not to query the DB for every request.
+- I didn't use caching layer because phonebook isn't the kind of app that you want to access the same entries multiple times frequently, and it would have add complexity for the project.
+- Logs are written ASYNC, to avoid a bottleneck.
+
+
 ## Logging
 
 The application is configured to use Logstash and Elasticsearch for logging.
 Logs are sent to a centralized logging system to support scalability and performance.
-Currently it doesn't work, but a regular logging solution is working.
+Currently it doesn't work, but an ASYNC local logging solution is working.
+
+## Tests
+
+The project contains several Integration tests. I didn't implement Junit logical due to lack of time, and the fact that the Classes don't have much logic in them.
+Tests work with secondary "testdb", for a clean production db.
 
 
 # flow example
@@ -229,7 +247,7 @@ This example demonstrates how the user "rise" can register, log in, and add a ne
 **Endpoint:** `POST /register`  
 
 **Example Request:**
-curl -X POST http://localhost:8080/addNewUser -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:8080/register -H "Content-Type: application/json" -d '{
   "userName": "rise",
   "password": "pass123",
 }'

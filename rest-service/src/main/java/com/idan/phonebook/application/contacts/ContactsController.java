@@ -34,16 +34,14 @@ public class ContactsController {
 
         size = (size >= 0 && size <= 10) ? size : DEF_PAGE_SIZE;
         page = (page >= 0) ? page : DEF_PAGE_NUM;
-        logger.info("Fetching contacts for token: {} on page: {}", token, page);
+        logger.info("Fetching contacts for token: {}", token);
 
 
-        String username = JwtUtil.validateToken(token);
-        if (username != null) {
-            logger.debug("Token validation successful. Username: {}", username);
-        } else {
-            logger.warn("Token validation failed for token: {}", token);
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build(); // Return UNAUTHORIZED if token is invalid
+        if (!isTokenAuthenticated(token)) {
+            // Return UNAUTHORIZED if token is invalid
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
+        String username = JwtUtil.extractUsername(token);
 
         Pageable pageable = PageRequest.of(page, size);
         Page<ContactDocument> contacts = contactsService.getContactsByUserName(username, pageable);
@@ -53,27 +51,27 @@ public class ContactsController {
 
     }
 
+
+
     @GetMapping("/search")
-    public Page<ContactDocument> searchContact(@RequestParam(value = "firstName", defaultValue = "") String firstName,
-                                               @RequestParam(value = "lastName", defaultValue = "") String lastName,
-                                               @RequestParam String token,
-                                               @RequestParam(defaultValue = "0") int page,
-                                               @RequestParam(defaultValue = "10") int size) {
+    public ResponseEntity<Page<ContactDocument>> searchContact(@RequestParam(value = "firstName", defaultValue = "") String firstName,
+                                                               @RequestParam(value = "lastName", defaultValue = "") String lastName,
+                                                               @RequestParam String token,
+                                                               @RequestParam(defaultValue = "0") int page,
+                                                               @RequestParam(defaultValue = "10") int size) {
 
         size = (size >= 0 && size <= MAX_PAGE_SIZE) ? size : DEF_PAGE_SIZE;
         page = (page >= 0) ? page : DEF_PAGE_NUM;
         logger.info("Searching contacts by firstName: {} and lastName {} for token: {}", firstName, lastName, token);
 
-        String username = JwtUtil.validateToken(token);
-        if (username != null) {
-            logger.debug("Token validation successful. Username: {}", username);
-
-
-        } else {
-            logger.warn("Token validation failed for token: {}", token);
-
+        if (!isTokenAuthenticated(token)) {
+            // Return UNAUTHORIZED if token is invalid
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
-        return contactsService.getContactsByUserNameAndFirstNameAndLastName(firstName, lastName, username, page, size);
+        String username = JwtUtil.extractUsername(token);
+
+        Page<ContactDocument> contacts = contactsService.getContactsByUserNameAndFirstNameAndLastName(firstName, lastName, username, page, size);
+        return ResponseEntity.ok(contacts);
     }
 
     @PostMapping("/add-contact")
@@ -82,17 +80,11 @@ public class ContactsController {
     ) {
         logger.info("Adding new contact for token: {}", token);
 
-        String username = JwtUtil.validateToken(token);
-        if (username != null) {
-            logger.debug("Token validation successful. Username: {}", username);
-
-
-        } else {
-            logger.warn("Token validation failed for token: {}", token);
-
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build(); // Return UNAUTHORIZED if token is invalid
-
+        if (!isTokenAuthenticated(token)) {
+            // Return UNAUTHORIZED if token is invalid
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
+        String username = JwtUtil.extractUsername(token);
         contact.setUserName(username);
         ContactDocument contactResponse;
         try {
@@ -116,17 +108,11 @@ public class ContactsController {
         logger.info("Updating contact with ID: {} for token: {}", id, token);
 
 
-        String username = JwtUtil.validateToken(token);
-        if (username != null) {
-            logger.debug("Token validation successful. Username: {}", username);
-
-
-        } else {
-            logger.warn("Token validation failed for token: {}", token);
-
+        if (!isTokenAuthenticated(token)) {
+            // Return UNAUTHORIZED if token is invalid
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-
         }
+        String username = JwtUtil.extractUsername(token);
         try {
             ContactDocument contact = contactsService.updateContact(id, updatedContact);
 
@@ -150,17 +136,11 @@ public class ContactsController {
 
         logger.info("Deleting contact with ID: {} for token: {}", id, token);
 
-        String username = JwtUtil.validateToken(token);
-        if (username != null) {
-            logger.debug("Token validation successful. Username: {}", username);
-
-
-        } else {
-            logger.warn("Token validation failed for token: {}", token);
-
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build(); // Return UNAUTHORIZED if token is invalid
-
+        if (!isTokenAuthenticated(token)) {
+            // Return UNAUTHORIZED if token is invalid
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
+
         try {
             contactsService.deleteContact(id);
         } catch (ContactNotExistsException e) {
@@ -176,12 +156,21 @@ public class ContactsController {
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
-
-    //################################################
-    @DeleteMapping("/delete-all")
-    public void deleteAllContact() {
-        contactsService.deleteAll();
+    private static boolean isTokenAuthenticated(String token) {
+        if (JwtUtil.validateToken(token)) {
+            logger.debug("Token validation successful");
+            return true;
+        }
+        logger.warn("Token validation failed for token");
+        return false;
     }
+
+
+//    //################################################
+//    @DeleteMapping("/delete-all")
+//    public void deleteAllContact() {
+//        contactsService.deleteAll();
+//    }
 
 
 }

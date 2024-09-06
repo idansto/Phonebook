@@ -16,7 +16,7 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    private static final SecretKey SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256); //TODO: use a persistent key that survives crashes.
+    private static final SecretKey SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256); //TODO: use a persistent key that survives crashes and suitable for docker.
     private static ApplicationContext applicationContext;
 
     @Autowired
@@ -72,15 +72,15 @@ public class JwtUtil {
 //    }
 
     // Validates the JWT token
-    public static String validateToken(String token) {
+    public static boolean validateToken(String token) {
         try {
-            String username = extractUsername(token);
-            if (!isTokenExpired(token) && getUserRepository().findByUserName(username).isPresent()) {
-                return username;
+            if (!isTokenExpired(token)) {
+                //            if (!isTokenExpired(token) && getUserRepository().findByUserName(username).isPresent()) {
+                return true;
             }
         } catch (SignatureException | MalformedJwtException e) {
-            return null;
+            return false;
         }
-        return null;
+        return false;
     }
 }
