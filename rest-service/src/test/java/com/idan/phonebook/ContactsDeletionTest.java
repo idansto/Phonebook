@@ -1,6 +1,6 @@
 package com.idan.phonebook;
 
-import com.idan.phonebook.application.Users.UserDocument;
+import com.idan.phonebook.application.users.UserDocument;
 import com.idan.phonebook.application.contacts.ContactDocument;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -2,8 +2,8 @@ package com.idan.phonebook;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.idan.phonebook.application.Users.UserDocument;
-import com.idan.phonebook.application.Users.UserService;
+import com.idan.phonebook.application.users.UserDocument;
+import com.idan.phonebook.application.users.UserService;
 import com.idan.phonebook.application.contacts.ContactDocument;
 import com.idan.phonebook.application.contacts.ContactsService;
 import org.junit.jupiter.api.BeforeAll;

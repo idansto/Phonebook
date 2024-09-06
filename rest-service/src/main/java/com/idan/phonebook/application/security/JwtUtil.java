@@ -1,6 +1,6 @@
-package com.idan.phonebook.application.Security;
+package com.idan.phonebook.application.security;
 
-import com.idan.phonebook.application.Users.UserRepository;
+import com.idan.phonebook.application.users.UserRepository;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -61,26 +61,11 @@ public class JwtUtil {
                 .before(new Date());
     }
 
-//    // Validates the JWT token
-//    public static boolean validateToken(String token, String user) {
-//        try {
-//            String username = extractUsername(token);
-//            return (username.equals(user) && !isTokenExpired(token));
-//        } catch (SignatureException e) {
-//            return false;
-//        }
-//    }
-
     // Validates the JWT token
     public static boolean validateToken(String token) {
         try {
             if (!isTokenExpired(token)) {
-                //            if (!isTokenExpired(token) && getUserRepository().findByUserName(username).isPresent()) {
-<<<<<<< HEAD
                 return true;
-=======
-                return extractUsername(token);
->>>>>>> bc086d49fd1dbe6043163887ec439cd9b3c52bd7
             }
         } catch (SignatureException | MalformedJwtException e) {
             return false;

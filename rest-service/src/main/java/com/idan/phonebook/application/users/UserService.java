@@ -1,6 +1,5 @@
-package com.idan.phonebook.application.Users;
+package com.idan.phonebook.application.users;
 
-import com.idan.phonebook.application.contacts.ContactsController;
 import com.idan.phonebook.application.exceptions.InternalPhoneBookServerError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

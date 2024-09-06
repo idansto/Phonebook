@@ -1,7 +1,7 @@
 package com.idan.phonebook;
 
-import com.idan.phonebook.application.Users.UserDocument;
-import com.idan.phonebook.application.Users.UserService;
+import com.idan.phonebook.application.users.UserDocument;
+import com.idan.phonebook.application.users.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

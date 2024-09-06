@@ -1,7 +1,7 @@
-package com.idan.phonebook.application.Users;
+package com.idan.phonebook.application.users;
 
-import com.idan.phonebook.application.Security.AuthResponse;
-import com.idan.phonebook.application.Security.JwtUtil;
+import com.idan.phonebook.application.security.AuthResponse;
+import com.idan.phonebook.application.security.JwtUtil;
 import com.idan.phonebook.application.exceptions.InternalPhoneBookServerError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

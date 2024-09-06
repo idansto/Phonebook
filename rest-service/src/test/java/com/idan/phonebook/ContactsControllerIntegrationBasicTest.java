@@ -1,11 +1,10 @@
 package com.idan.phonebook;
 
-import com.idan.phonebook.application.Users.UserDocument;
-import com.idan.phonebook.application.Users.UserRepository;
-import com.idan.phonebook.application.Users.UserService;
+import com.idan.phonebook.application.users.UserDocument;
+import com.idan.phonebook.application.users.UserRepository;
+import com.idan.phonebook.application.users.UserService;
 
 import com.idan.phonebook.application.contacts.ContactRepository;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

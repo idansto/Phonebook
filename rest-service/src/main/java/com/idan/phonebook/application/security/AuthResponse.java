@@ -1,4 +1,4 @@
-package com.idan.phonebook.application.Security;
+package com.idan.phonebook.application.security;
 
 public class AuthResponse {
     private String token;

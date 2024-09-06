@@ -2,7 +2,7 @@ package com.idan.phonebook;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.idan.phonebook.application.contacts.ContactDocument;
-import com.idan.phonebook.application.Users.UserDocument;
+import com.idan.phonebook.application.users.UserDocument;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.util.Map;
 import java.util.Objects;
 import java.util.stream.IntStream;
 

@@ -1,4 +1,4 @@
-package com.idan.phonebook.application.Users;
+package com.idan.phonebook.application.users;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

@@ -3,10 +3,9 @@ package com.idan.phonebook;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.idan.phonebook.application.Users.UserDocument;
-import com.idan.phonebook.application.Users.UserService;
+import com.idan.phonebook.application.users.UserDocument;
+import com.idan.phonebook.application.users.UserService;
 import com.idan.phonebook.application.contacts.ContactDocument;
-import org.bson.json.JsonObject;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,7 +17,6 @@ import org.springframework.http.*;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.util.Date;
-import java.util.Map;
 import java.util.Objects;
 
 import static com.idan.phonebook.ContactsControllerIntegrationTest1.extractKeyFromResponse;

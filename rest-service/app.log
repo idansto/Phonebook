@@ -46,46 +46,46 @@
 2024-09-03 23:54:27 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 2024-09-03 23:54:27 - Completed initialization in 4 ms
 2024-09-03 23:54:27 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:27 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:27 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:27 - idanssss
 2024-09-03 23:54:27 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:27 - Writing [com.idan.phonebook.application.Security.AuthResponse@38dda944]
+2024-09-03 23:54:27 - Writing [com.idan.phonebook.application.security.AuthResponse@38dda944]
 2024-09-03 23:54:27 - Completed 200 OK
 2024-09-03 23:54:29 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:29 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:29 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:29 - idanssss
 2024-09-03 23:54:29 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:29 - Writing [com.idan.phonebook.application.Security.AuthResponse@56f9294a]
+2024-09-03 23:54:29 - Writing [com.idan.phonebook.application.security.AuthResponse@56f9294a]
 2024-09-03 23:54:29 - Completed 200 OK
 2024-09-03 23:54:44 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:44 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:44 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:44 - idanssss
 2024-09-03 23:54:44 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:44 - Writing [com.idan.phonebook.application.Security.AuthResponse@e0fd6d]
+2024-09-03 23:54:44 - Writing [com.idan.phonebook.application.security.AuthResponse@e0fd6d]
 2024-09-03 23:54:44 - Completed 200 OK
 2024-09-03 23:54:49 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:49 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:49 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:49 - idanssss
 2024-09-03 23:54:49 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:49 - Writing [com.idan.phonebook.application.Security.AuthResponse@370aba70]
+2024-09-03 23:54:49 - Writing [com.idan.phonebook.application.security.AuthResponse@370aba70]
 2024-09-03 23:54:49 - Completed 200 OK
 2024-09-03 23:54:50 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:50 - idanssss
 2024-09-03 23:54:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.Security.AuthResponse@322d08b6]
+2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.security.AuthResponse@322d08b6]
 2024-09-03 23:54:50 - Completed 200 OK
 2024-09-03 23:54:50 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:50 - idanssss
 2024-09-03 23:54:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.Security.AuthResponse@73302851]
+2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.security.AuthResponse@73302851]
 2024-09-03 23:54:50 - Completed 200 OK
 2024-09-03 23:54:51 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:54:51 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:51 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:54:51 - idanssss
 2024-09-03 23:54:51 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:54:51 - Writing [com.idan.phonebook.application.Security.AuthResponse@7b999689]
+2024-09-03 23:54:51 - Writing [com.idan.phonebook.application.security.AuthResponse@7b999689]
 2024-09-03 23:54:51 - Completed 200 OK
 2024-09-03 23:55:03 - POST "/logind?userName=rise&password=cazo1", parameters={masked}
 2024-09-03 23:55:03 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
@@ -98,16 +98,16 @@
 2024-09-03 23:55:03 - Writing [{timestamp=Tue Sep 03 23:55:03 IDT 2024, status=404, error=Not Found, path=/logind}]
 2024-09-03 23:55:03 - Exiting from "ERROR" dispatch, status 404
 2024-09-03 23:55:18 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:55:18 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:55:18 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:55:18 - idanssss
 2024-09-03 23:55:18 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:55:18 - Writing [com.idan.phonebook.application.Security.AuthResponse@7a344017]
+2024-09-03 23:55:18 - Writing [com.idan.phonebook.application.security.AuthResponse@7a344017]
 2024-09-03 23:55:18 - Completed 200 OK
 2024-09-03 23:55:24 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:55:24 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:55:24 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:55:24 - idanssss
 2024-09-03 23:55:24 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:55:24 - Writing [com.idan.phonebook.application.Security.AuthResponse@30c1dc7c]
+2024-09-03 23:55:24 - Writing [com.idan.phonebook.application.security.AuthResponse@30c1dc7c]
 2024-09-03 23:55:24 - Completed 200 OK
 2024-09-03 23:56:20 - Starting RestServiceApplication using Java 17.0.11 with PID 16156 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
 2024-09-03 23:56:20 - No active profile set, falling back to 1 default profile: "default"
@@ -138,10 +138,10 @@
 2024-09-03 23:56:28 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
 2024-09-03 23:56:28 - Completed initialization in 2 ms
 2024-09-03 23:56:28 - POST "/login?userName=rise&password=cazo1", parameters={masked}
-2024-09-03 23:56:28 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:56:28 - Mapped to com.idan.phonebook.application.users.UserController#login(String, String)
 2024-09-03 23:56:28 - hi
 2024-09-03 23:56:29 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-09-03 23:56:29 - Writing [com.idan.phonebook.application.Security.AuthResponse@31956497]
+2024-09-03 23:56:29 - Writing [com.idan.phonebook.application.security.AuthResponse@31956497]
 2024-09-03 23:56:29 - Completed 200 OK
 2024-09-03 23:57:18 - Starting RestServiceApplication using Java 17.0.11 with PID 7996 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
 2024-09-03 23:57:18 - No active profile set, falling back to 1 default profile: "default"
