@@ -76,7 +76,11 @@ public class JwtUtil {
         try {
             if (!isTokenExpired(token)) {
                 //            if (!isTokenExpired(token) && getUserRepository().findByUserName(username).isPresent()) {
+<<<<<<< HEAD
                 return true;
+=======
+                return extractUsername(token);
+>>>>>>> bc086d49fd1dbe6043163887ec439cd9b3c52bd7
             }
         } catch (SignatureException | MalformedJwtException e) {
             return false;
