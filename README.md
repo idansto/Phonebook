@@ -224,6 +224,7 @@ The `UserDocument` represents a user entity that stores the following fields:
 - Logs are written ASYNC, to avoid a bottleneck.
 
 
+
 ## Logging
 
 The application is configured to use Logstash and Elasticsearch for logging.
