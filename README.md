@@ -33,7 +33,8 @@ The application supports JWT-based authentication and provides endpoints for add
 
 1. Clone the repository.
 2. docker-compose up -d.
-3. Run the application using your preferred IDE or through the command line:
+3. Or:
+   Run the application using your preferred IDE or through the command line:
 
    mvn spring-boot:run
 
@@ -211,11 +212,19 @@ The `UserDocument` represents a user entity that stores the following fields:
 - `userName` (String): The username of the user.
 - `password` (String): The password of the user.
 
+## Performance
+
+- I made the app in a way that it can be instantiated multiple times on demand for scaling.
+- I used mongodb because it can be expanded later both vertically and horizontally scaled, using several nodes with the shard feature on the userName key.
+- I indexed the relevant DB keys in order to improve queries rate.
+- I didn't use caching layer because phonebook isn't the kind of app that you want to access the same entries multiple times frequently, and it would have add complexity for the project.
+
+
 ## Logging
 
 The application is configured to use Logstash and Elasticsearch for logging.
 Logs are sent to a centralized logging system to support scalability and performance.
-Currently it doesn't work, but a regular logging solution is working.
+Currently it doesn't work, but a local logging solution is working.
 
 
 # flow example
@@ -229,7 +238,7 @@ This example demonstrates how the user "rise" can register, log in, and add a ne
 **Endpoint:** `POST /register`  
 
 **Example Request:**
-curl -X POST http://localhost:8080/addNewUser -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:8080/register -H "Content-Type: application/json" -d '{
   "userName": "rise",
   "password": "pass123",
 }'
