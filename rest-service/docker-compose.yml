@@ -1,0 +1,75 @@
+#version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+    expose:
+      - 27017
+
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: phonebook-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    #      - elasticsearch
+    #      - logstash
+    networks:
+      - app-network
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/contacts
+      - SPRING_DATA_MONGODB_DATABASE=contacts
+      - SPRING_DATA_MONGODB_HOST=mongodb
+      - MONGO_URI=mongodb://mongodb:27017/contacts
+
+
+
+
+
+  #  elasticsearch:
+  #    image: docker.elastic.co/elasticsearch/elasticsearch:8.7.0
+  #    ports:
+  #      - "9200:9200"
+  #    volumes:
+  #      - ./elasticSearch/config:/usr/share/elasticsearch/config/
+  #    environment:
+  #      - discovery.type=single-node
+  #      - network.host=0.0.0.0
+  #
+  #    networks:
+  #      - log-network
+
+
+
+  #  logstash:
+  #    image: docker.elastic.co/logstash/logstash:8.7.0
+  #    ports:
+  #      - "5044:5044"
+  #    volumes:
+  #      - ./logstash/config:/usr/share/logstash/config
+  #    networks:
+  #      - log-network
+
+
+
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

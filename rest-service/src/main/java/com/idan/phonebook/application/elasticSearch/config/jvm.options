@@ -1,0 +1,5 @@
+-Xms1g
+-Xmx1g
+-XX:+UseG1GC
+-XX:+HeapDumpOnOutOfMemoryError
+-Djava.awt.headless=true

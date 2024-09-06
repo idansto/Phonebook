@@ -1,0 +1,206 @@
+2024-09-03 23:53:37 - Starting RestServiceApplication using Java 17.0.11 with PID 7664 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-03 23:53:37 - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 23:53:38 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-03 23:53:38 - Finished Spring Data repository scanning in 109 ms. Found 2 MongoDB repository interfaces.
+2024-09-03 23:53:40 - Tomcat initialized with port 8080 (http)
+2024-09-03 23:53:40 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:53:40 - Starting service [Tomcat]
+2024-09-03 23:53:40 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 23:53:40 - Initializing Spring embedded WebApplicationContext
+2024-09-03 23:53:40 - Root WebApplicationContext: initialization completed in 2687 ms
+2024-09-03 23:53:40 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@10272bbb, com.mongodb.Jep395RecordCodecProvider@36d33f4, com.mongodb.KotlinCodecProvider@16736040]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-03 23:53:40 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=61019699}
+2024-09-03 23:53:41 - 10 mappings in 'requestMappingHandlerMapping'
+2024-09-03 23:53:42 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-03 23:53:42 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-03 23:53:42 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-03 23:53:42 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:53:42 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 23:53:42 - Started RestServiceApplication in 6.081 seconds (process running for 6.831)
+2024-09-03 23:54:20 - Starting RestServiceApplication using Java 17.0.11 with PID 2580 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-03 23:54:20 - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 23:54:21 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-03 23:54:22 - Finished Spring Data repository scanning in 180 ms. Found 2 MongoDB repository interfaces.
+2024-09-03 23:54:23 - Tomcat initialized with port 8080 (http)
+2024-09-03 23:54:23 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:54:23 - Starting service [Tomcat]
+2024-09-03 23:54:23 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 23:54:24 - Initializing Spring embedded WebApplicationContext
+2024-09-03 23:54:24 - Root WebApplicationContext: initialization completed in 3561 ms
+2024-09-03 23:54:24 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f9cab00, com.mongodb.Jep395RecordCodecProvider@10272bbb, com.mongodb.KotlinCodecProvider@36d33f4]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-03 23:54:24 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=65288599}
+2024-09-03 23:54:25 - 10 mappings in 'requestMappingHandlerMapping'
+2024-09-03 23:54:25 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-03 23:54:25 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-03 23:54:25 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-03 23:54:26 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:54:26 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 23:54:26 - Started RestServiceApplication in 7.215 seconds (process running for 8.291)
+2024-09-03 23:54:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03 23:54:27 - Initializing Servlet 'dispatcherServlet'
+2024-09-03 23:54:27 - Detected StandardServletMultipartResolver
+2024-09-03 23:54:27 - Detected AcceptHeaderLocaleResolver
+2024-09-03 23:54:27 - Detected FixedThemeResolver
+2024-09-03 23:54:27 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3cae5c08
+2024-09-03 23:54:27 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1289e3f4
+2024-09-03 23:54:27 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-03 23:54:27 - Completed initialization in 4 ms
+2024-09-03 23:54:27 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:27 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:27 - idanssss
+2024-09-03 23:54:27 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:27 - Writing [com.idan.phonebook.application.Security.AuthResponse@38dda944]
+2024-09-03 23:54:27 - Completed 200 OK
+2024-09-03 23:54:29 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:29 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:29 - idanssss
+2024-09-03 23:54:29 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:29 - Writing [com.idan.phonebook.application.Security.AuthResponse@56f9294a]
+2024-09-03 23:54:29 - Completed 200 OK
+2024-09-03 23:54:44 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:44 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:44 - idanssss
+2024-09-03 23:54:44 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:44 - Writing [com.idan.phonebook.application.Security.AuthResponse@e0fd6d]
+2024-09-03 23:54:44 - Completed 200 OK
+2024-09-03 23:54:49 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:49 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:49 - idanssss
+2024-09-03 23:54:49 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:49 - Writing [com.idan.phonebook.application.Security.AuthResponse@370aba70]
+2024-09-03 23:54:49 - Completed 200 OK
+2024-09-03 23:54:50 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:50 - idanssss
+2024-09-03 23:54:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.Security.AuthResponse@322d08b6]
+2024-09-03 23:54:50 - Completed 200 OK
+2024-09-03 23:54:50 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:50 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:50 - idanssss
+2024-09-03 23:54:50 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:50 - Writing [com.idan.phonebook.application.Security.AuthResponse@73302851]
+2024-09-03 23:54:50 - Completed 200 OK
+2024-09-03 23:54:51 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:54:51 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:54:51 - idanssss
+2024-09-03 23:54:51 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:54:51 - Writing [com.idan.phonebook.application.Security.AuthResponse@7b999689]
+2024-09-03 23:54:51 - Completed 200 OK
+2024-09-03 23:55:03 - POST "/logind?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:55:03 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-09-03 23:55:03 - Resource not found
+2024-09-03 23:55:03 - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource logind.]
+2024-09-03 23:55:03 - Completed 404 NOT_FOUND
+2024-09-03 23:55:03 - "ERROR" dispatch for POST "/error?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:55:03 - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-09-03 23:55:03 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:55:03 - Writing [{timestamp=Tue Sep 03 23:55:03 IDT 2024, status=404, error=Not Found, path=/logind}]
+2024-09-03 23:55:03 - Exiting from "ERROR" dispatch, status 404
+2024-09-03 23:55:18 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:55:18 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:55:18 - idanssss
+2024-09-03 23:55:18 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:55:18 - Writing [com.idan.phonebook.application.Security.AuthResponse@7a344017]
+2024-09-03 23:55:18 - Completed 200 OK
+2024-09-03 23:55:24 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:55:24 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:55:24 - idanssss
+2024-09-03 23:55:24 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:55:24 - Writing [com.idan.phonebook.application.Security.AuthResponse@30c1dc7c]
+2024-09-03 23:55:24 - Completed 200 OK
+2024-09-03 23:56:20 - Starting RestServiceApplication using Java 17.0.11 with PID 16156 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-03 23:56:20 - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 23:56:21 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-03 23:56:21 - Finished Spring Data repository scanning in 96 ms. Found 2 MongoDB repository interfaces.
+2024-09-03 23:56:23 - Tomcat initialized with port 8080 (http)
+2024-09-03 23:56:23 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:56:23 - Starting service [Tomcat]
+2024-09-03 23:56:23 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 23:56:23 - Initializing Spring embedded WebApplicationContext
+2024-09-03 23:56:23 - Root WebApplicationContext: initialization completed in 2736 ms
+2024-09-03 23:56:24 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1f2f0109, com.mongodb.Jep395RecordCodecProvider@483b0690, com.mongodb.KotlinCodecProvider@687e6293]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-03 23:56:24 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=65365800}
+2024-09-03 23:56:25 - 10 mappings in 'requestMappingHandlerMapping'
+2024-09-03 23:56:25 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-03 23:56:25 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-03 23:56:25 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-03 23:56:25 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:56:25 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 23:56:25 - Started RestServiceApplication in 6.0 seconds (process running for 6.573)
+2024-09-03 23:56:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03 23:56:28 - Initializing Servlet 'dispatcherServlet'
+2024-09-03 23:56:28 - Detected StandardServletMultipartResolver
+2024-09-03 23:56:28 - Detected AcceptHeaderLocaleResolver
+2024-09-03 23:56:28 - Detected FixedThemeResolver
+2024-09-03 23:56:28 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49c156d0
+2024-09-03 23:56:28 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f2f73a6
+2024-09-03 23:56:28 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-03 23:56:28 - Completed initialization in 2 ms
+2024-09-03 23:56:28 - POST "/login?userName=rise&password=cazo1", parameters={masked}
+2024-09-03 23:56:28 - Mapped to com.idan.phonebook.application.Users.UserController#login(String, String)
+2024-09-03 23:56:28 - hi
+2024-09-03 23:56:29 - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-03 23:56:29 - Writing [com.idan.phonebook.application.Security.AuthResponse@31956497]
+2024-09-03 23:56:29 - Completed 200 OK
+2024-09-03 23:57:18 - Starting RestServiceApplication using Java 17.0.11 with PID 7996 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-03 23:57:18 - No active profile set, falling back to 1 default profile: "default"
+2024-09-03 23:57:19 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-03 23:57:19 - Finished Spring Data repository scanning in 72 ms. Found 2 MongoDB repository interfaces.
+2024-09-03 23:57:20 - Tomcat initialized with port 8080 (http)
+2024-09-03 23:57:20 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:57:20 - Starting service [Tomcat]
+2024-09-03 23:57:20 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-03 23:57:20 - Initializing Spring embedded WebApplicationContext
+2024-09-03 23:57:20 - Root WebApplicationContext: initialization completed in 2191 ms
+2024-09-03 23:57:20 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@2ead6ba4, com.mongodb.Jep395RecordCodecProvider@31a2a9fa, com.mongodb.KotlinCodecProvider@31b82e0f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-03 23:57:20 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=65307100}
+2024-09-03 23:57:22 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-03 23:57:22 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-03 23:57:22 - Started RestServiceApplication in 5.238 seconds (process running for 5.83)
+2024-09-03 23:57:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-03 23:57:23 - Initializing Servlet 'dispatcherServlet'
+2024-09-03 23:57:23 - Completed initialization in 2 ms
+2024-09-03 23:57:23 - hi
+2024-09-03 23:57:24 - hi
+2024-09-03 23:57:24 - hi
+2024-09-04 00:00:24 - Starting RestServiceApplication using Java 17.0.11 with PID 20316 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-04 00:00:24 - No active profile set, falling back to 1 default profile: "default"
+2024-09-04 00:00:26 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 00:00:26 - Finished Spring Data repository scanning in 133 ms. Found 2 MongoDB repository interfaces.
+2024-09-04 00:00:28 - Tomcat initialized with port 8080 (http)
+2024-09-04 00:00:28 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-04 00:00:28 - Starting service [Tomcat]
+2024-09-04 00:00:28 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-04 00:00:28 - Initializing Spring embedded WebApplicationContext
+2024-09-04 00:00:28 - Root WebApplicationContext: initialization completed in 3247 ms
+2024-09-04 00:00:28 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@483b0690, com.mongodb.Jep395RecordCodecProvider@687e6293, com.mongodb.KotlinCodecProvider@6870c3c2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-04 00:00:28 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=64192400}
+2024-09-04 00:00:30 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-04 00:00:30 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-04 00:00:30 - Started RestServiceApplication in 6.673 seconds (process running for 7.697)
+2024-09-04 00:00:36 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-04 00:00:36 - Initializing Servlet 'dispatcherServlet'
+2024-09-04 00:00:36 - Completed initialization in 1 ms
+2024-09-04 00:00:36 - hi
+2024-09-04 00:00:39 - hi
+2024-09-04 00:01:03 - Starting RestServiceApplication using Java 17.0.11 with PID 10208 (C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service\target\classes started by Idan in C:\Users\Idan\Desktop\MyProjects\Rise\rest-service\rest-service)
+2024-09-04 00:01:03 - No active profile set, falling back to 1 default profile: "default"
+2024-09-04 00:01:04 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-09-04 00:01:04 - Finished Spring Data repository scanning in 66 ms. Found 2 MongoDB repository interfaces.
+2024-09-04 00:01:06 - Tomcat initialized with port 8080 (http)
+2024-09-04 00:01:06 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-04 00:01:06 - Starting service [Tomcat]
+2024-09-04 00:01:06 - Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-04 00:01:06 - Initializing Spring embedded WebApplicationContext
+2024-09-04 00:01:06 - Root WebApplicationContext: initialization completed in 2237 ms
+2024-09-04 00:01:06 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.11+7-LTS-207"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@e95595b, com.mongodb.Jep395RecordCodecProvider@5a917723, com.mongodb.KotlinCodecProvider@7e4579c7]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-09-04 00:01:06 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=70271100}
+2024-09-04 00:01:08 - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-04 00:01:08 - Tomcat started on port 8080 (http) with context path '/'
+2024-09-04 00:01:08 - Started RestServiceApplication in 5.097 seconds (process running for 5.648)
+2024-09-04 00:01:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-04 00:01:11 - Initializing Servlet 'dispatcherServlet'
+2024-09-04 00:01:11 - Completed initialization in 3 ms
+2024-09-04 00:01:11 - hi
+2024-09-04 00:01:12 - hi
