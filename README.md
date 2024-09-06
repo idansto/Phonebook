@@ -36,9 +36,13 @@ The application supports JWT-based authentication and provides endpoints for add
 1. Clone the repository.
 2. docker-compose up -d.
 3. Or:
+   install and run MongoDB on localhost:27017.
+
    Run the application using your preferred IDE or through the command line:
 
    mvn spring-boot:run
+   
+   
 
 4. The application will be available at `http://localhost:8080`.
 
