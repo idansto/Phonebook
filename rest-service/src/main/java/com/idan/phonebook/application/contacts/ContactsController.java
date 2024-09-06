@@ -52,7 +52,6 @@ public class ContactsController {
     }
 
 
-
     @GetMapping("/search")
     public ResponseEntity<Page<ContactDocument>> searchContact(@RequestParam(value = "firstName", defaultValue = "") String firstName,
                                                                @RequestParam(value = "lastName", defaultValue = "") String lastName,
@@ -91,8 +90,8 @@ public class ContactsController {
             contactResponse = contactsService.addContact(contact);
             logger.info("Contact added successfully for username: {}", username);
 
-        } catch (DuplicateContactException e) {
-            logger.error("Duplicate contact detected for username: {}", username);
+        } catch (DuplicateContactException duplicateContactException) {
+            logger.error("Duplicate contact detected for username: {}", username, duplicateContactException);
 
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         }
@@ -106,7 +105,6 @@ public class ContactsController {
             @RequestParam(value = "token") String token) {
 
         logger.info("Updating contact with ID: {} for token: {}", id, token);
-
 
         if (!isTokenAuthenticated(token)) {
             // Return UNAUTHORIZED if token is invalid

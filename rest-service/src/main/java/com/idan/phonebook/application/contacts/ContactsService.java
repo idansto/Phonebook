@@ -34,7 +34,6 @@ public class ContactsService {
         try {
             return contactRepository.save(contact);
         } catch (DuplicateKeyException e) {
-            logger.warn("Failed to add contact due to duplicate id: {}", contact.getId());
 
             throw new DuplicateContactException("A contact with the same username and phone number already exists.", e);
         }
@@ -47,6 +46,7 @@ public class ContactsService {
     }
 
     public void deleteContact(String id) {
+        //check if contacts exists - only for informative cause message
         Optional<ContactDocument> contact = contactRepository.findById(id);
         if (contact.isEmpty()) {
             logger.warn("Contact not found for id: {}", id);
